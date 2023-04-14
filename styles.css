@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 174, 255);
+    height: 100vh;
+}
+input[type=number]{
+    border: 1px solid rgb(172, 172, 172);
+    padding: 10px;
+    border-radius: 5px;
+}
+input[type=submit]{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+input[type=submit]:hover{
+    transform: scale(1.05);
+}
+
+
+.container{
+    position: relative;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.location{
+    align-self: self-start;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.location i{
+    font-size: 38px;
+    margin-right: 20px;
+}
+.location-text{
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+}
+.container img{
+    width: 50%;
+}
+.temperature{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+}
+.description{
+    font-size: 35px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.weather-details{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 20px;
+}
+.weather-details .wind-direction{
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+}
+.weather-details .wind-speed{
+    display: flex;
+    align-items: center;
+}
+.wind-direction i, .wind-speed i{
+position: absolute;
+font-size: 25px;
+}
+
+.wind-direction .text, .wind-speed .text{
+    margin-left: 40px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: 600;
+}
